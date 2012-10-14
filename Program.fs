@@ -44,7 +44,7 @@ let convertToFakeInternationalized (inputString:string) =
         (fun (s:string) -> sb.Append(s) |> ignore),
         (fun () -> sb.ToString())
 
-    appendC '[' //_ or ignore required
+    appendC '['
 
     let mutable waitingForEndBrace = false
     let mutable waitingForGreaterThan = false
@@ -99,7 +99,7 @@ let main argv =
                 new ResXResourceReader(fileName)
                 |> Seq.cast<DictionaryEntry>
 
-            //Pick the resources to convert.  (List expression, pattern match, single case active pattern).
+            //Pick the resources to convert.  (Seq expression, pattern match, single case active pattern).
             let kvps = seq { 
                 for resource in resources do
                     match resource.Value with

@@ -2,6 +2,8 @@
 ///but still readable Euro-like language to exercise your i18n code");
 ///without a formal translation.");
 
+type Person = { Name:string; Surname:string; }
+
 //Usage message.
 let usageMsg = "
 Purpose: Takes an English resource file (resx) and creates an artificial

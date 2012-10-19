@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "PsuedoizerF", "PsuedoizerF.fsproj", "{7924F1DD-0C95-4914-9FD3-1752BCD59F70}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PsuedoizerC", "..\PsuedoizerC\PsuedoizerC.csproj", "{FD8B0629-735F-4497-B1CB-529B262F74D1}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,10 +13,6 @@ Global
 		{7924F1DD-0C95-4914-9FD3-1752BCD59F70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7924F1DD-0C95-4914-9FD3-1752BCD59F70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7924F1DD-0C95-4914-9FD3-1752BCD59F70}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FD8B0629-735F-4497-B1CB-529B262F74D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FD8B0629-735F-4497-B1CB-529B262F74D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FD8B0629-735F-4497-B1CB-529B262F74D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FD8B0629-735F-4497-B1CB-529B262F74D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

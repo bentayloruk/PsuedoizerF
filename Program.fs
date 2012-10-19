@@ -1,6 +1,9 @@
-﻿///Takes an English resource file (resx) and creates an artificial");/
-///but still readable Euro-like language to exercise your i18n code");
-///without a formal translation.");
+﻿//THIS IS A VERY LITERAL TRANSLATION OF https://github.com/shanselman/Psuedoizer
+//IT IS NOT INTENDED AS A GOOD EXAMPLE OF FUNCTIONAL PROGRAMMING IN F#
+
+///Takes an English resource file (resx) and creates an artificial
+///but still readable Euro-like language to exercise your i18n code
+///without a formal translation.
 
 type Person = { Name:string; Surname:string; }
 
@@ -19,9 +22,9 @@ type ExitCode = | OK = 0 | BadArgCount = 1 | NoTextResourcesFound = 2 | InFileNa
 
 //Char conversions (tuple list to map).
 let charMap =
-    [   ('A', 'Å'); ('B', 'ß'); ('C', 'C'); ('D', 'Đ'); ('E', 'Ē'); ('F', 'F'); ('G', 'Ğ'); ('H', 'Ħ'); ('I', 'Ĩ'); ('J', 'Ĵ')
-        ('K', 'Ķ'); ('L', 'Ŀ'); ('M', 'M'); ('N', 'Ń'); ('O', 'Ø'); ('P', 'P'); ('Q', 'Q'); ('R', 'Ŗ'); ('S', 'Ŝ'); ('T', 'Ŧ')
-        ('U', 'Ů'); ('V', 'V'); ('W', 'Ŵ'); ('X', 'X'); ('Y', 'Ÿ'); ('Z', 'Ż'); ('a', 'ä'); ('b', 'þ'); ('c', 'č'); ('d', 'đ')
+    [   ('A', 'Å'); ('B', 'ß'); ('C', 'C'); ('D', 'Đ'); ('E', 'Ē'); ('F', 'F'); ('G', 'Ğ'); ('H', 'Ħ'); ('I', 'Ĩ'); ('J', 'Ĵ');
+        ('K', 'Ķ'); ('L', 'Ŀ'); ('M', 'M'); ('N', 'Ń'); ('O', 'Ø'); ('P', 'P'); ('Q', 'Q'); ('R', 'Ŗ'); ('S', 'Ŝ'); ('T', 'Ŧ');
+        ('U', 'Ů'); ('V', 'V'); ('W', 'Ŵ'); ('X', 'X'); ('Y', 'Ÿ'); ('Z', 'Ż'); ('a', 'ä'); ('b', 'þ'); ('c', 'č'); ('d', 'đ');
         ('e', 'ę'); ('f', 'ƒ'); ('g', 'ģ'); ('h', 'ĥ'); ('i', 'į'); ('j', 'ĵ'); ('k', 'ĸ'); ('l', 'ľ'); ('m', 'm'); ('n', 'ŉ');
         ('o', 'ő'); ('p', 'p'); ('q', 'q'); ('r', 'ř'); ('s', 'ş'); ('t', 'ŧ'); ('u', 'ū'); ('v', 'v'); ('w', 'ŵ'); ('x', 'χ');
         ('y', 'y'); ('z', 'ž');
